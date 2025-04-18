@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-image: url(bg-pattern-top-desktop.svg), url(bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat;
     background-position: left top, right bottom;
     padding: 80px 160px;
@@ -162,7 +162,7 @@ main {
 
 @media (max-width: 860px) {
     body {
-        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-image: url(bg-pattern-top-mobile.svg), url(bg-pattern-bottom-mobile.svg);
         padding: 80px 24px;
     }
     
