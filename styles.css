@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    padding: 80px 160px;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.main_head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.section_1 {
+    width: 40%;
+}
+
+.section_1 h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+
+.section_1 p {
+    font-size: 18px;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/* Ratings Section */
+.section_2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rating-card {
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    padding: 18px 30px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    width: 85%;
+}
+
+.stars {
+    margin-right: 24px;
+}
+
+.se2_para1 {
+    align-self: flex-start;
+}
+
+.se2_para2 {
+    align-self: center;
+}
+
+.se2_para3 {
+    align-self: flex-end;
+}
+
+/* Reviews Section */
+.section_3 {
+    display: flex;
+    gap: 30px;
+    height: 280px;
+}
+
+.review-card {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(0, 0%, 100%);
+    padding: 40px 32px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.reviewer-img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.reviewer-name {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.verified-buyer {
+    color: hsl(333, 80%, 67%);
+    font-size: 16px;
+}
+
+.review-text {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.card1 {
+    align-self: flex-start;
+}
+
+.card2 {
+    align-self: center;
+}
+
+.card3 {
+    align-self: flex-end;
+}
+
+
+/* Footer  */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    body {
+        padding: 80px 40px;
+    }
+}
+
+@media (max-width: 860px) {
+    body {
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        padding: 80px 24px;
+    }
+    
+    .main_head {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    
+    .section_1, .section_2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .section_1 h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .section_1 p {
+        margin-bottom: 40px;
+    }
+    
+    .rating-card {
+        flex-direction: column;
+        width: 100%;
+        padding: 16px;
+    }
+    
+    .stars {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .se2_para1, .se2_para2, .se2_para3 {
+        align-self: center;
+    }
+    
+    .section_3 {
+        flex-direction: column;
+        height: auto;
+        gap: 16px;
+    }
+    
+    .review-card {
+        height: auto;
+    }
+    
+    .card1, .card2, .card3 {
+        align-self: center;
+    }
+}
