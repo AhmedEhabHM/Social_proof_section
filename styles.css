@@ -150,8 +150,16 @@ main {
   }
 
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    font-size: 11px;
+    text-decoration: none;
   }
+  .attribution a:link {
+    color: black;
+  }
+  .attribution a:visited {
+    color: black;
+  }
+
 
 /* Responsive Design */
 @media (max-width: 1200px) {
